@@ -7,7 +7,6 @@ export default class BusinessDto {
   logo: string;
   @IsNotEmpty()
   domain: string;
-  @IsNotEmpty()
   isMultipleLocationEnabled: boolean;
   noOfEmplopyees: string;
 }

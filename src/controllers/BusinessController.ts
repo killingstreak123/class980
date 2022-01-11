@@ -7,7 +7,9 @@ export default class BusinessController {
 
   public registerBusiness = (req: Request, res: Response, next: NextFunction): void => {
     try {
+      console.log("lll")
       const dto: BusinessDto = req.body;
+      console.log("lll  11")
       this.businessService.createBusiness(dto);
     } catch (error) {
       next(error);
