@@ -13,7 +13,7 @@ export const dbConnection: ConnectionOptions = {
   database: database,
   synchronize: true,
   logging: false,
-  entities: [join(__dirname, '../**/*.entity{.ts,.js}')],
+  entities: [join(__dirname, '../**/*Model{.ts,.js}')],
   migrations: [join(__dirname, '../**/*.migration{.ts,.js}')],
   subscribers: [join(__dirname, '../**/*.subscriber{.ts,.js}')],
   cli: {

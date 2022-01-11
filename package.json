@@ -1,7 +1,7 @@
 {
-  "name": "sentinel-notification",
+  "name": "business-service",
   "version": "0.0.0",
-  "description": "TypeScript + TypeORM + PostgreSQL + Express API Server",
+  "description": "Business Backend Service for Sentinel App",
   "author": "",
   "license": "ISC",
   "scripts": {
