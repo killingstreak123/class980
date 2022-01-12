@@ -1,0 +1,13 @@
+
+@baseURL = http://localhost:8001
+
+POST {{ baseURL }}/createBusiness
+Content-Type: application/json
+
+{
+    "name":"sujit 12",
+    "logo":"re",
+    "domain":"12.1hipla.io",
+    "noOfEmplopyees":"200",
+    "isMultipleLocationEnabled": true
+}

@@ -1,18 +1,18 @@
 {
-    "env": "development",
-    "dbConfig": {
-        "host": "localhost",
-        "user": "root",
-        "password": "password",
-        "database": "test"
-    },
-    "secretKey": "secretKey",
-    "log": {
-        "format": "dev",
-        "dir": "../logs"
-    },
-    "cors": {
-        "origin": true,
-        "credentials": true
-    }
+  "env": "development",
+  "dbConfig": {
+      "host": "staging-sentinel.c69u4x9b0vhc.ap-south-1.rds.amazonaws.com",
+      "user": "postgres",
+      "password": "XHTJK24QQNjxhQsW",
+      "database": "dev_business"
+  },
+  "secretKey": "secretKey",
+  "log": {
+      "format": "dev",
+      "dir": "../logs"
+  },
+  "cors": {
+      "origin": true,
+      "credentials": true
+  }
 }
