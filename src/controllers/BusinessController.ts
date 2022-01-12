@@ -5,12 +5,11 @@ import { NextFunction } from "express";
 export default class BusinessController {
   private businessService = new BusinessService();
 
-  public registerBusiness = (req: Request, res: Response, next: NextFunction): void => {
+  public async registerBusiness = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      console.log("lll")
       const dto: BusinessDto = req.body;
-      console.log("lll  11")
-      this.businessService.createBusiness(dto);
+      let data = await this.businessService.createBusiness(dto);
+      return res.status(201).json({ data: data, message: 'Created' });
     } catch (error) {
       next(error);
     }
