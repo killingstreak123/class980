@@ -14,7 +14,10 @@ class BusinessRoute implements Routes {
   }
 
   private initializeRoutes() {
+    this.router.get(`${this.path}createBusiness/`, validationMiddleware(BusinessDto, 'body'), this.businessController.listAll);
+    this.router.get(`${this.path}createBusiness/:id`, validationMiddleware(BusinessDto, 'body'), this.businessController.getOneById);
     this.router.post(`${this.path}createBusiness`, validationMiddleware(BusinessDto, 'body'), this.businessController.registerBusiness);
+    this.router.delete(`${this.path}createBusiness/:id`, validationMiddleware(BusinessDto, 'body'), this.businessController.deleteUser);
   }
 }
 

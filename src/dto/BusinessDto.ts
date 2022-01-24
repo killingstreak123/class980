@@ -1,7 +1,6 @@
-import { Allow, IsBoolean, IsNotEmpty, IsString } from "class-validator"
+import { Allow, IsBoolean, IsNotEmpty, IsString } from 'class-validator';
 
 export default class BusinessDto {
-
   @IsNotEmpty()
   @IsString()
   name: string;
@@ -17,6 +16,9 @@ export default class BusinessDto {
   @IsBoolean()
   isMultipleLocationEnabled: boolean;
 
+  // @IsBoolean()
+  // isActive: boolean;
+
   @IsString()
-  noOfEmplopyees: string;
+  noOfEmployees: string;
 }

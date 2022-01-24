@@ -2,8 +2,8 @@
     "env": "production",
     "dbConfig": {
         "host": "localhost",
-        "user": "root",
-        "password": "password",
+        "user": "postgres",
+        "password": "178627",
         "database": "test"
     },
     "secretKey": "secretKey",

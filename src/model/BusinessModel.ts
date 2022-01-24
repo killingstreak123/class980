@@ -1,26 +1,28 @@
-import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { request } from 'express';
+import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
-
-@Entity("business")
-export default class BusinessModel extends BaseEntity{
-
-  @PrimaryGeneratedColumn({name: 'business_id'})
+@Entity('business')
+export default class BusinessModel extends BaseEntity {
+  @PrimaryGeneratedColumn({ name: 'business_id' })
   businessId: number;
 
-  @Column({name: "business_name", nullable: false, unique: true})
+  @Column({ name: 'business_name', nullable: false, unique: true })
   name: string;
 
-  @Column({name: "logo", nullable: false})
+  @Column({ name: 'logo', nullable: false })
   logo: string;
 
-  @Column({name: "domain", nullable: false, unique: true})
+  @Column({ name: 'domain', nullable: false, unique: true })
   domain: string;
 
-  @Column({name: "is_multiple_location_enabled", default: false})
+  @Column({ name: 'is_multiple_location_enabled', default: false })
   isMultipleLocationEnabled: boolean;
 
-  @Column({name: "number_of_employees"})
-  noOfEmplopyees: string;
+  @Column({ name: 'number_of_employees' })
+  noOfEmployees: string;
+
+  // @Column({ name: 'isActive', default: true })
+  // isActive: boolean;
 
   @Column()
   @CreateDateColumn()
@@ -29,5 +31,4 @@ export default class BusinessModel extends BaseEntity{
   @Column()
   @UpdateDateColumn()
   updatedAt: Date;
-
 }

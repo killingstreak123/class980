@@ -7,7 +7,7 @@ const { host, user, password, database }: dbConfig = config.get('dbConfig');
 export const dbConnection: ConnectionOptions = {
   type: 'postgres',
   host: host,
-  port: 5432,
+  port: 1786,
   username: user,
   password: password,
   database: database,

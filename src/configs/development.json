@@ -1,10 +1,10 @@
 {
   "env": "development",
   "dbConfig": {
-      "host": "staging-sentinel.c69u4x9b0vhc.ap-south-1.rds.amazonaws.com",
+      "host": "localhost",
       "user": "postgres",
-      "password": "XHTJK24QQNjxhQsW",
-      "database": "dev_business"
+      "password": "178627",
+      "database": "business"
   },
   "secretKey": "secretKey",
   "log": {
