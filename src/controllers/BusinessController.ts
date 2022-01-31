@@ -18,10 +18,8 @@ export default class BusinessController {
     }
   };
 
-
   public listAll = async (req: Request, res: Response) => {
-
-    const userRepository = getRepository(BusinessModel);
+   const userRepository = getRepository(BusinessModel);
     const users = await userRepository.find({
       select: ['logo', 'domain', 'name'],
     });
@@ -59,5 +57,6 @@ export default class BusinessController {
 
     res.status(204).send();
   };
+
 }
 export { BusinessController };
